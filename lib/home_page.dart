@@ -35,17 +35,17 @@ class _HomePageState extends State<HomePage> with RouteAware {
                 arguments.age = 18;
                 Navigator.pushNamed(context, "second", arguments: arguments);
 
-                // Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //             builder: (context) => SecondPage(),
-                //             settings: RouteSettings(
-                //                 name: 'second', arguments: arguments)))
-                //     .then((value) {
-                //   result = value as Arguments;
-                //   print(result.toString());
-                //   setState(() {});
-                // });
+                Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SecondPage(),
+                            settings: RouteSettings(
+                                name: 'second', arguments: arguments)))
+                    .then((value) {
+                  result = value as Arguments;
+                  print(result.toString());
+                  setState(() {});
+                });
               },
               child: Text(
                 result.name,
