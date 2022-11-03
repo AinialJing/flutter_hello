@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hello/arguments.dart';
-import 'package:flutter_hello/arguments/sharedpreference.dart';
 import 'package:flutter_hello/navigator2/custome_routes.dart';
 
+import 'arguments/single_instance.dart';
+
 void main() {
-  runApp(MySharedPreference());
+  runApp(GloableSingleInstance());
 }
 
 Arguments arguments = Arguments();

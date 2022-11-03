@@ -9,8 +9,7 @@ class ShareDataFromChildToParent extends StatefulWidget {
       _ShareDataFromChildToParentState();
 }
 
-class _ShareDataFromChildToParentState
-    extends State<ShareDataFromChildToParent> {
+class _ShareDataFromChildToParentState extends State<ShareDataFromChildToParent> {
   String _msg = "";
 
   @override
