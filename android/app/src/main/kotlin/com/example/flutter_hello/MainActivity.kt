@@ -1,5 +1,6 @@
 package com.example.flutter_hello
 
+<<<<<<< HEAD
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -47,4 +48,9 @@ class MainActivity : FlutterActivity() {
             context.startActivity(intent)
         }
     }
+=======
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+>>>>>>> 4b03bdc89489a5595207d499b1dd2a52fe6f607a
 }
