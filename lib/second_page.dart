@@ -49,7 +49,7 @@ class _SecondPageState extends State<SecondPage> with RouteAware {
   }
   @override
   void initState() {
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       routeObserver.subscribe(this, ModalRoute.of(context)!);
     });
     super.initState();

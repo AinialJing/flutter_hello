@@ -1,21 +1,9 @@
 class Arguments {
-  String _name = "";
-  int _age = 0;
-
-  String get name => _name;
-
-  set name(String value) {
-    _name = value;
-  }
-
-  int get age => _age;
-
-  set age(int value) {
-    _age = value;
-  }
+  String name = "";
+  int age = 0;
 
   @override
   String toString() {
-    return 'Arguments{_name: $_name, _age: $_age}';
+    return 'Arguments{_name: $name, _age: $age}';
   }
 }

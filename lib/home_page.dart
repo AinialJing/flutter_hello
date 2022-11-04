@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> with RouteAware {
 
   @override
   void initState() {
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       routeObserver.subscribe(this, ModalRoute.of(context)!);
     });
     result.name = "我是首页";
