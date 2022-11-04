@@ -53,6 +53,7 @@ android {
     dataBinding{
         enabled true
     }
+    namespace 'com.example.flutter_hello'
 }
 
 flutter {

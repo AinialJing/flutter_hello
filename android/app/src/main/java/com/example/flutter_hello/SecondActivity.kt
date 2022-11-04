@@ -1,6 +1,7 @@
 package com.example.flutter_hello
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -24,7 +25,8 @@ class SecondActivity : AppCompatActivity() {
 //                    .build(mContext)
 //            )
             //方式3：intent传参的形式打开新的dart页面（会卡顿）
-            MainActivity.start(mContext,"second")
+//            MainActivity.start(mContext,"second")
+            startActivity(Intent(mContext,ThreeActivity::class.java))
         }
     }
 }
