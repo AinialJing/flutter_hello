@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hello/arguments.dart';
+import 'package:flutter_hello/channel/basic_message_channel.dart';
 import 'package:flutter_hello/navigator2/custome_routes.dart';
 
-import 'channel/event_channel.dart';
+import 'androidview/cell.dart';
 
 void main() {
-  runApp(FlutterEventChannel());
+  runApp(MyBasicMessageChannel());
+}
+
+@pragma("vm:entry-point")
+void showCell() {
+  runApp(const Cell());
 }
 
 Arguments arguments = Arguments();

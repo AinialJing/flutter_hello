@@ -6,6 +6,7 @@ import android.content.IntentFilter
 import android.net.ConnectivityManager
 import android.os.Bundle
 import android.util.Log
+import com.example.flutter_hello.androidview.AddFlutterViewActivity
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.BasicMessageChannel
@@ -69,7 +70,7 @@ class MainActivity : FlutterActivity() {
             startActivity(
                 Intent(
                     this,
-                    SecondActivity::class.java
+                    AddFlutterViewActivity::class.java
                 )
             )
             reply.reply("成功跳转")
