@@ -91,7 +91,7 @@ class ListAdapter(context: Context, private val flutterViewEngine: FlutterViewEn
         } else {
             // If it's not selected as a Flutter cell, just show the Android card.
             cell.binding.androidCard.visibility = View.VISIBLE
-            cell.binding.cellNumber.text = position.toString();
+            cell.binding.cellNumber.text = position.toString()
         }
     }
 
