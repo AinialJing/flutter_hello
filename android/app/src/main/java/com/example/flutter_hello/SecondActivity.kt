@@ -17,7 +17,7 @@ class SecondActivity : AppCompatActivity() {
             DataBindingUtil.setContentView(this, R.layout.activity_second)
         binding.jumpToDartSecond.setOnClickListener {
             //方式1：跳转到已经在flutter的routers声明的命名路由页面（会卡顿）
-            startActivity(FlutterActivity.withNewEngine().initialRoute("second").build(mContext))
+//            startActivity(FlutterActivity.withNewEngine().initialRoute("second").build(mContext))
             //方式2：跳转到initialRoute指定的页面(不卡顿)
 //            startActivity(
 //                FlutterActivity
