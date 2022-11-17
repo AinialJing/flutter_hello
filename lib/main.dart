@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hello/arguments.dart';
+import 'package:flutter_hello/container_widget/flow_page.dart';
 import 'package:flutter_hello/navigator2/custome_routes.dart';
 
 import 'androidview/cell.dart';
-import 'container_widget/bottomsheet_operator.dart';
-import 'container_widget/scaffold_widget.dart';
 
 void main() {
-  runApp(ScaffoldWidget());
+  runApp(FlowApp());
 }
 
 @pragma("vm:entry-point")
